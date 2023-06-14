@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectVersion>4.1</ProjectVersion>
     <ProjectGuid>{ee1c3815-c5e8-4a67-96b6-01158c62d5c9}</ProjectGuid>
-    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql140DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
     <RootPath>
     </RootPath>
@@ -60,10 +60,17 @@
     <Folder Include="dbo\Tables" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="dbo\Tables\Customers.sql" />
-    <Build Include="dbo\Tables\Orders.sql" />
+    <Build Include="dbo\Tables\Customer.sql" />
+    <Build Include="dbo\Tables\Order.sql" />
+    <Build Include="dbo\Tables\OrderItem.sql" />
+    <Build Include="dbo\Tables\Product.sql" />
+    <Build Include="dbo\Tables\Address.sql" />
+    <Build Include="dbo\Tables\CustomerAddress.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="OrdersDatabase.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="OrdersDatabase.publish.xml" />
   </ItemGroup>
 </Project>
